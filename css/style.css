@@ -7,37 +7,75 @@
 #grid_wrapper {
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr, 1fr, 1fr;
-    grid-template-rows: 50px, 3fr, 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 95% 50%;
     grid-template-areas: 
     "he he he"
     "s1 s1 s1"
-    "s2 s3 s4"
+    "s2 s2 s2"
     ;
 }
 
+
 header {
-    background-color: aquamarine;
+    background-color: rgb(167, 24, 24);
     grid-area: he;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #section1{
-    background-color: palegreen;
     grid-area: s1;
+
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(../img/animals/zoo_animal.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    border-bottom: black solid 1px;
 }
 
 #section2{
-    background-color: pink;
+    background-color: rgb(36, 36, 36);
     grid-area: s2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#section3{
-    background-color: blue;
-    grid-area: s3;
+
+a:hover{
+    font-weight: bolder;
 }
 
-#section4{
-    background-color: crimson;
-    grid-area: s4;
+h1 {
+    font-size: 40px;
+    font-weight: lighter;
 }
 
+#start_page_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#information_plats{
+    background: blue;
+    height: 80%;
+    width: 30%;
+    margin: 10px;
+}
+
+#information_tider{
+    background: brown;
+    height: 80%;
+    width: 30%;
+    margin: 10px;
+}
+
+#information_om_oss{
+    background :burlywood;
+    height: 80%;
+    width: 30%;
+    margin: 10px;
+}
