@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kenia&family=Passions+Conflict&family=Reem+Kufi+Ink&family=Satisfy&family=Silkscreen&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,75 +9,136 @@
 #grid_wrapper {
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 95% 50%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 672px 400px 400px 400px 300px;
     grid-template-areas: 
-    "he he he"
-    "s1 s1 s1"
-    "s2 s2 s2"
+    "he he"
+    "s1 s1"
+    "s2 s2"
+    "s3 s3"
+    "s4 s4"
+    "fo fo"
     ;
 }
 
 
 header {
-    background-color: rgb(167, 24, 24);
+    background-color: #fdfdfd;
     grid-area: he;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 #section1{
+    background-color: #357960;
+    color: #fdfdfd;
     grid-area: s1;
-
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(../img/animals/zoo_animal.jpg);
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: top;
-    border-bottom: black solid 1px;
+    border-bottom: #fdfdfd solid 1px;
+    border-top: #fdfdfd solid 1px;
+    display: flex;
+    justify-content: center;
 }
 
 #section2{
-    background-color: rgb(36, 36, 36);
     grid-area: s2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
+#section3{
+    grid-area: s3;
+}
+
+#section4{
+    grid-area: s4;
+}
+
+footer{
+    background-color: #357960;
+    color: #fdfdfd;
+    grid-area: fo;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.animal_information{
+    background-color: #fdfdfd;
+    color: #fdfdfd;
+}
+
+li {
+    list-style: none;
+    display: inline;
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #357960;
+    font-size: larger;
+}
 
 a:hover{
     font-weight: bolder;
 }
 
 h1 {
+    font-family: 'Reem Kufi Ink', sans-serif;
     font-size: 40px;
     font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+p{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 #start_page_text {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 50%;
+    height: 50%;  
+    border: 2px solid #fdfdfd;
+    border-radius: 5px;
+}
+
+#boknings_knapp {
+    margin-top: 20px;
+
+    padding-left: 10px;
+    padding-right: 100px;
+
+    border: 1px solid #fdfdfd;
+    border-radius: 5px;
+    padding: 5px;
+
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+#boknings_knapp:hover {
+    border: 2px solid #fdfdfd;
+    cursor: pointer;
+}
+
+.footer_information{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#information_plats{
-    background: blue;
-    height: 80%;
-    width: 30%;
-    margin: 10px;
+.information_rubrik{
+    margin-bottom: 10px;
 }
 
-#information_tider{
-    background: brown;
-    height: 80%;
-    width: 30%;
-    margin: 10px;
-}
 
-#information_om_oss{
-    background :burlywood;
-    height: 80%;
-    width: 30%;
-    margin: 10px;
-}
+
