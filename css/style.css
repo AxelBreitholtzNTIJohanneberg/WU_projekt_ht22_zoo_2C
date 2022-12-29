@@ -41,12 +41,17 @@ a:hover{
     font-weight: bolder;
 }
 
-p{
+.start_paragraph{
     font-size: 1.2rem;
     text-align: center;
     margin-top: 20px;
     margin-left: 30px;
     margin-right: 30px;
+    color: white;
+}
+
+p {
+    font-size: 1.2rem;
 }
 
 footer{
@@ -209,7 +214,7 @@ footer{
     height: 100vh;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 200px 250px 250px 300px;
+    grid-template-rows: 300px 275px 270px 300px;
     grid-template-areas: 
     "s1m"
     "s2m"
@@ -218,15 +223,17 @@ footer{
 }
 
 .dish_container {
-    width: auto;
+    width: 400px;
     height: 200px;
     margin: 100px 20px;
-    background-color: #ffffff;
-    border: black solid 2px;
-    border-radius: 20px;
+    background-color: #FFFFFF;
+    color: black;
+    box-shadow: 2px 2px 2px 2px;
+    border-radius: 2px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     padding: 20px;
+    box-shadow: 1px 1px 5px 1px black;
 }
 
 .food_image {
@@ -240,22 +247,23 @@ footer{
 #section1_menu {
     grid-area: s1m;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: flex-end;
 }
 
 #section2_menu {
     grid-area: s2m;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 #section3_menu {
     grid-area: s3m;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 #menu_start_text {
@@ -269,8 +277,14 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     width: 60%;
+}
+
+.dish_text {
+    padding-bottom: 0.2rem;
+    margin-bottom: 0.8rem;
+    border-bottom: black dotted 1px;
 }
 
 
