@@ -54,6 +54,10 @@ p {
     font-size: 1.2rem;
 }
 
+h3{
+    color: #ffffff;
+}
+
 footer{
     background-color: #1F6048;
     color: #ffffff;
@@ -62,6 +66,7 @@ footer{
     justify-content: space-evenly;
     align-items: center;
     border-top: #FFFFFF solid 1px;
+    width: 100%;
 }
 
 .footer_information{
@@ -73,6 +78,11 @@ footer{
 
 .information_rubrik{
     margin-bottom: 10px;
+}
+
+.img_employed {
+    height: 50%;
+    width: 100%;
 }
 
 /*Startingsida CSS*/
@@ -300,13 +310,28 @@ footer{
     "s2o s3o s4o"
     "s5o s6o s7o"
     "fo fo fo";
+    justify-items: center;
 }
 
 .om_oss_card {
     background-color: white;
     margin: 50px;
     height: 400px;
-    width: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    background-color: #1F6048;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: -20px;
+    display: flex;
+    justify-content: center;
+    width: 120px;
+
 }
 
 #section1_om_oss {
@@ -321,6 +346,7 @@ footer{
 }
 #section2_om_oss {
     grid-area: s2o;
+    display: flex;
 }
 #section3_om_oss {
     grid-area: s3o;
