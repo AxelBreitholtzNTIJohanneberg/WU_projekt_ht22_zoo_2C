@@ -177,8 +177,6 @@ footer{
     border-radius: 2px;
 }
 
-
-
 #name_text {
     font-family: 'Reem Kufi Ink', sans-serif;
     font-size: 40px;
@@ -200,8 +198,6 @@ footer{
 #boknings_knapp {
     margin-top: 20px;
     margin-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 100px;
 
     border: 1px solid #ffffff;
     border-radius: 5px;
@@ -224,7 +220,7 @@ footer{
     height: 100vh;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 300px 275px 270px 300px;
+    grid-template-rows: 300px 275px 275px 300px;
     grid-template-areas: 
     "s1m"
     "s2m"
